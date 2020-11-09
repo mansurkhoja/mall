@@ -39,6 +39,9 @@ textarea {
     font-size: 100%;
     line-height: 1.15;
     margin: 0;
+    white-space: normal;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 h1,
@@ -1170,7 +1173,7 @@ svg {
     color: #999999;
     margin-bottom: 18px;
     width: 100%;
-    background-color: #ffffff;
+    background-color: transparent;
     -webkit-box-shadow: none;
     box-shadow: none;
 }
