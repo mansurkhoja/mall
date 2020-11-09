@@ -1170,7 +1170,7 @@ svg {
     color: #999999;
     margin-bottom: 18px;
     width: 100%;
-    background-color: transparent;
+    background-color: #ffffff;
     -webkit-box-shadow: none;
     box-shadow: none;
 }
@@ -1848,5 +1848,8 @@ svg {
     }
     .hashtag {
         letter-spacing: 0.2em;
+    }
+    .btn {
+        width: 198px;
     }
 }
