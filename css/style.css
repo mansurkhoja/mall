@@ -572,12 +572,6 @@ svg {
     background-color: #999999;
 }
 
-.sale,
-.event {
-    display: block;
-    overflow-x: hidden;
-}
-
 .section__inner {
     padding: 150px 103px 150px 0;
     position: relative;
