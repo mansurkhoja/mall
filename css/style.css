@@ -573,7 +573,7 @@ svg {
 }
 
 .section {
-    display: block;
+    /* display: block; */
     overflow-x: hidden;
 }
 
