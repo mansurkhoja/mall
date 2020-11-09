@@ -1,0 +1,153 @@
+//FOOTER
+.footer {
+    display: block;
+    margin: 0 100px 0 246px;
+    padding-bottom: 120px;
+}
+
+.footer__logo {
+    text-align: center;
+    position: relative;
+    & .logo {
+        display: inline-block;
+        padding: 0 57px 0 67px;
+    }
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        width: calc(50% + 115px);
+        height: 2px;
+        background-color: #eeeeee;
+        left: -246px;
+        top: 50%;
+        transform: translateY(50%);
+    }
+    &::after {
+        width: calc(50% - 30px);
+        right: -100px;
+        left: auto;
+    }
+}
+
+.footer__follow {
+    display: flex;
+    justify-content: space-between;
+    padding: 90px 0 85px;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        width: calc(100% + 256px);
+        height: 2px;
+        background-color: #eeeeee;
+        bottom: 0;
+        left: -156px;
+    }
+}
+
+.footer-subtitle {
+    font-size: 12px;
+    font-weight: 550;
+    letter-spacing: 0.3em;
+    line-height: 11.86px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+.footer__follow-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer__social {
+    width: 25%;
+}
+
+.social-links {
+    margin-bottom: 13px;
+    & a {
+        margin-right: 35px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.footer__subscribe {
+    width: 45%;
+    margin-left: 105px;
+}
+
+.subscribe-form {
+    position: relative;
+}
+
+.subscribe__input {
+    margin-bottom: 0 !important;
+}
+
+.btn--subscribe {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.footer__download {
+    width: 30%;
+    margin-left: 177px;
+}
+
+.download__links a:first-child {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+//footer nav
+.footer__nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 79px;
+}
+
+.footer__item {
+    padding-bottom: 18px;
+}
+
+.footer__link {
+    color: $color-base;
+    font-size: $font-s-base;
+    line-height: 27px;
+    transition: opacity .2s linear;
+    display: flex;
+    align-items: center;
+    img {
+        margin-right: 22px;
+    }
+    &:hover {
+        opacity: .9;
+    }
+}
+
+.footer__phone {
+    display: flex;
+    flex-direction: column;
+    line-height: 27px;
+    a {
+        color: $color-base;
+        font-size: 36px;
+        line-height: 54px;
+    }
+}
+
+//bottom
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    font-size: 16px;
+    line-height: 20px;
+    color: $color-grey;
+}

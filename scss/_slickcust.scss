@@ -1,0 +1,70 @@
+//ADD AND EDIT SOME SLICK LIDER CLASSES
+.slick-dots {
+    display: flex;
+    position: absolute;
+    bottom: 97px;
+    right: 100px;
+    li {
+        margin-right: 10px;
+        &.slick-active .dot {
+            background-color: $color-white;
+        }
+        .dot {
+            cursor: pointer;
+            width: 15px;
+            height: 2px;
+            background-color: #b3b3b3;
+            transition: background-color .2s linear;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.btn--right {
+    right: 100px;
+}
+
+.btn--left {
+    left: 244px;
+}
+
+.btn--wave-left {
+    left: -156px;
+}
+
+.btn--wave-right {
+    top: 62px;
+    bottom: auto;
+    right: -103px;
+}
+
+//PROGRESS BAR OF SLICK SLIDER
+.slider-progress {
+    width: calc(100% - 432px);
+    position: absolute;
+    bottom: 255px;
+    height: 8px;
+    transform: translateX(288px);
+}
+
+.slider-progress__bg {
+    @extend .slider-progress__timer;
+    width: 100%;
+}
+
+.slider-progress__item {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    height: 8px;
+}
+
+.slider-progress__timer {
+    position: absolute;
+    bottom: 0px;
+    height: 8px;
+    background-repeat-y: no-repeat;
+    max-width: 100%;
+}

@@ -1,0 +1,38 @@
+.hashtag {
+    line-height: 142.27px;
+    font-size: 134px;
+    letter-spacing: 0.4em;
+    font-weight: $font-w-light;
+    position: relative;
+    margin: 171px 0 150px;
+}
+
+.hashtag__mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    color: #F37128;
+    background-color: transparent;
+    clip-path: circle(200px at 67% 4px);
+    &::after {
+        content: "";
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        background-color: rgba(243, 113, 40, .1);
+        border-radius: 50%;
+        left: 52.9%;
+        bottom: -59px;
+        z-index: -1;
+    }
+}
+
+.instagram__items>.slick-list {
+    margin-left: -156px;
+    margin-right: -103px;
+}
+
+.instagram__item {
+    padding-right: 10px;
+}

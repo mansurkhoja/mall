@@ -1,0 +1,65 @@
+// BUTTONS
+.btn {
+    display: inline-block;
+    font-size: .833333em;
+    font-weight: $font-w-base;
+    text-align: center;
+    line-height: 19.5px;
+    color: $color-base;
+    background-color: transparent;
+    border: 2px solid #111111;
+    border-radius: 50px;
+    padding: .88em 1.4em .788em 3.85em;
+    vertical-align: middle;
+    user-select: none;
+    cursor: pointer;
+    outline: none;
+    text-transform: uppercase;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 48px;
+        height: 48px;
+        border: 2px solid #111111;
+        border-radius: 50px;
+        top: -2px;
+        left: -2px;
+    }
+    &:active::before {
+        background-color: #e9e9e9;
+    }
+    &--link {
+        padding-right: 1.35em;
+        padding-left: 3.71em;
+        color: $color-white;
+        border: 2px solid #ffffff;
+        &::before {
+            border: 2px solid #ffffff;
+        }
+    }
+    &--close {
+        padding: 0;
+        border: 0;
+        &::before {
+            content: none;
+        }
+    }
+    &--arrow {
+        border: 0;
+        padding: 0;
+        position: absolute;
+        z-index: 2;
+        bottom: 244px;
+        &::before {
+            content: none;
+        }
+    }
+    &--wave {
+        @extend .btn--arrow;
+        bottom: 81px;
+        &::before {
+            content: none;
+        }
+    }
+}

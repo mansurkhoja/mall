@@ -1,0 +1,32 @@
+.section__inner {
+    padding: 150px 103px 150px 0;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        width: calc(100% + 146px);
+        height: 2px;
+        background-color: $color-base;
+        bottom: 0;
+        left: -146px;
+        z-index: 7;
+    }
+}
+
+.sale .section__inner::after {
+    background-image: url(../img/dividerwave.svg);
+    height: 8px;
+    background-color: transparent;
+}
+
+.instagram .section__inner {
+    padding-bottom: 100px;
+    &::after {
+        content: none;
+    }
+}
+
+.show-all {
+    text-align: center;
+    padding-top: 110px;
+}

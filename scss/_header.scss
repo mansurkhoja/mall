@@ -1,0 +1,232 @@
+// HEADER
+.header__top {
+    display: flex;
+    position: relative;
+    padding: 33px 100px 34px;
+    z-index: 99;
+}
+
+.header__logo {
+    padding-left: 31px;
+}
+
+.logo {
+    display: block;
+}
+
+.header__top-item {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.header__top-search {
+    margin-right: 70px;
+    cursor: pointer;
+}
+
+.lang {
+    font-size: 16px;
+    margin-right: 70px;
+    cursor: pointer;
+}
+
+.burger {
+    cursor: pointer;
+}
+
+//HEADER ASIDE NAV AND TIMER
+.header__aside {
+    position: fixed;
+    z-index: 8;
+    top: 90px;
+    left: 0;
+    height: 100%;
+    background-color: $color-white;
+    max-width: 362px;
+    width: 90px;
+    padding: 90px 10px 0 0;
+    box-shadow: 0px -90px $color-white;
+    overflow: hidden;
+    // transition: max-width .5s linear;
+    &:hover {
+        width: 100%;
+        overflow-y: auto;
+        &>.nav {
+            padding-left: 100px;
+        }
+        &>.time>img {
+            display: none;
+        }
+        &>.time>.time__inner {
+            display: flex;
+        }
+        ~.header__slider {
+            margin-left: 392px;
+        }
+    }
+}
+
+.nav {
+    overflow: hidden;
+    padding-left: 34px;
+}
+
+.nav__item {
+    margin-bottom: 38px;
+}
+
+.nav__link {
+    white-space: nowrap;
+    vertical-align: middle;
+    display: inline-block;
+    font-size: $font-s-aside;
+    line-height: 20px;
+    color: $color-base;
+    transition: color 0.4s ease;
+    svg {
+        fill: $color-base;
+        transition: fill 0.4s ease;
+        margin-right: 21px;
+        width: 24px;
+        // vertical-align: sub;
+    }
+    &:hover {
+        color: $color-hover;
+        .nav__wave::after {
+            width: 100%;
+        }
+    }
+    &:hover svg {
+        fill: $color-hover;
+    }
+}
+
+.nav__wave {
+    position: relative;
+    height: 24px;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 5px;
+        background-image: url(../img/nav-wave.svg);
+        bottom: -8px;
+        left: 0;
+        transition: width 0.3s linear;
+    }
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
+    & img {
+        display: block;
+        margin: 65px 0 0 31px;
+    }
+}
+
+.time__chart {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: rgba($color: #82bf8c, $alpha: 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#circle {
+    stroke: rgba($color: #82bf8c, $alpha: 0.25);
+    stroke-width: 22px;
+    fill: transparent;
+}
+
+.time__items {
+    padding-left: 22px;
+}
+
+.time__inner {
+    padding: 30px 0 0 50px;
+    display: none;
+    margin-bottom: 53px;
+}
+
+.time__item {
+    font-size: 14px;
+    text-transform: lowercase;
+    line-height: 21px;
+    display: flex;
+    flex-direction: column;
+}
+
+.time__work {
+    color: #82bf8c;
+    &--active {
+        color: $color-hover;
+    }
+}
+
+//HEADER SLIDER
+.header__slider {
+    position: relative;
+}
+
+.header__slider-item {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: $color-white;
+}
+
+.header__slider-inner {
+    padding: 400px 17px 74px 247px;
+    background: linear-gradient(360deg, rgba(17, 17, 17, 0.75) 0%, rgba(17, 17, 17, 0) 74.48%);
+}
+
+.header__slider-info {
+    padding-bottom: 51px;
+}
+
+.header__slider-title {
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 63.68px;
+    text-align: left;
+    padding: 39px 0 85px;
+    & span {
+        display: block;
+    }
+}
+
+.header__slider-subtitle {
+    font-size: 12px;
+    font-weight: 550;
+    letter-spacing: 0.3em;
+    line-height: 11.86px;
+    text-transform: uppercase;
+}
+
+.header__slider-descr {
+    line-height: 23.4px;
+    max-width: 954px;
+    margin: 0;
+}
+
+//PROGRES BAR EDITION only for ie......
+.progress-ie {
+    position: absolute;
+    bottom: 0px;
+    height: 8px;
+    max-width: 100%;
+    background-image: none !important;
+    background-color: $color-white;
+}
+
+.progress-bg-ie {
+    @extend .progress-ie;
+    width: 100%;
+    background-image: none !important;
+    background-color: $color-grey;
+}
