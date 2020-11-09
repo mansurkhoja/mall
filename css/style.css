@@ -1170,6 +1170,9 @@ svg {
     color: #999999;
     margin-bottom: 18px;
     width: 100%;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 
 .callback-input::-webkit-input-placeholder {
@@ -1567,6 +1570,8 @@ svg {
     }
     .footer__phone a {
         font-size: 24px;
+        line-height: 36px;
+        margin-top: 6px;
     }
     .footer__links-how {
         display: block;
@@ -1758,6 +1763,7 @@ svg {
         -ms-flex-direction: column;
         flex-direction: column;
         text-align: center;
+        margin-top: 25px;
     }
     .footer__copy {
         padding-bottom: 16px;
@@ -1832,6 +1838,7 @@ svg {
     }
     .subscribe__input {
         font-size: 14px;
+        height: 48px;
     }
 }
 
