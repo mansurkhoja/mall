@@ -1175,6 +1175,7 @@ svg {
     width: 100%;
     background-color: transparent;
     -webkit-box-shadow: none;
+    -webkit-appearance: none;
     box-shadow: none;
 }
 
