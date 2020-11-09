@@ -110,6 +110,10 @@ svg {
     background-image: url(../img/wave-insta.svg);
 }
 
+.main-content {
+    overflow-x: hidden;
+}
+
 .wrapper {
     padding-top: 140px;
     margin-left: 246px;
@@ -194,6 +198,10 @@ svg {
 
 .btn--wave::before {
     content: none;
+}
+
+.btn--more {
+    width: 198px;
 }
 
 .slick-dots {
@@ -1004,6 +1012,7 @@ svg {
 
 .subscribe__input {
     margin-bottom: 0 !important;
+    padding-right: 183px !important;
 }
 
 .btn--subscribe {
@@ -1174,8 +1183,8 @@ svg {
     margin-bottom: 18px;
     width: 100%;
     background-color: transparent;
-    -webkit-box-shadow: none;
     -webkit-appearance: none;
+    -webkit-box-shadow: none;
     box-shadow: none;
 }
 
@@ -1461,6 +1470,9 @@ svg {
     }
     .btn--wave img {
         width: 80px;
+    }
+    .subscribe__input {
+        padding-right: 57px !important;
     }
     .btn--subscribe {
         font-size: 0;
