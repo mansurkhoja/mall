@@ -85,19 +85,6 @@
     //HEADER-ASIDE-NAV
     var $el = $(".header__top");
     var aside = $(".header__aside");
-    // aside.hover(
-    //     function() {
-    //         aside.toggleClass("open");
-    //     }
-    // );
-    // aside.on('click', function() {
-    //     aside.toggleClass("open")
-    // });
-    // window.addEventListener('click', function(e) {
-    //     if (e.target.closest('.header__aside') === null) {
-    //         aside.removeClass("open")
-    //     }
-    // });
     $(window).on('scroll resize load', function() {
         if ($(this).scrollTop() < parseFloat($el.css("height"))) {
             var scrollTop = $(this).scrollTop(),
@@ -126,30 +113,26 @@
                 visibleBottom = elBottom > scrollBot ? scrollBot : elBottom;
             if ((visibleBottom - visibleTop) >= 0) {
                 imgParent.css({ "top": (imgParallaxSize - (visibleBottom - visibleTop)) });
+                // imgParent.css("transform", "translateY(" + (imgParallaxSize - (visibleBottom - visibleTop)) + ")");
             }
-
         });
     });
     $('.instagram__items').slick({
-
         infinite: true,
         speed: 999,
         slidesToShow: 3,
-
         centerPadding: '0',
         variableWidth: true,
         prevArrow: '<button class="btn btn--wave btn--wave-left"> <img src="img/wave-left.png" /></button>',
         nextArrow: '<button class="btn btn--wave btn--wave-right"> <img src="img/wave-right.png" /></button>',
         responsive: [{
-                breakpoint: 1380,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                    centerMode: true,
-                    variableWidth: false
-                }
+            breakpoint: 1380,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                centerMode: true,
+                variableWidth: false
             }
-
-        ]
+        }]
     });
 })(jQuery);
