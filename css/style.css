@@ -572,8 +572,9 @@ svg {
     background-color: #999999;
 }
 
-.section {
-    /* display: block; */
+.sale,
+.event {
+    display: block;
     overflow-x: hidden;
 }
 
